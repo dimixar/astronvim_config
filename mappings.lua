@@ -11,6 +11,7 @@ return {
             end,
             desc = "Close buffer"
         },
-        ["<leader>fp"] = { "<cmd>Telescope projects<cr>", desc = "Find project" }
+        ["<leader>fp"] = { "<cmd>Telescope projects<cr>", desc = "Find project" },
+        ["<leader>ggn"] = { "<cmd>Neogit<cr>", desc = "Open Neogit" }
     }
 }
