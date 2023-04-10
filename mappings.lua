@@ -2,16 +2,14 @@ return {
     n = {
         ["<leader>c"] = {
             function()
-                local bufs = vim.fn.getbufinfo { buflisted = true }
+                local bufs = vim.fn.getbufinfo {buflisted = true}
                 require("astronvim.utils.buffer").close(0)
                 if require("astronvim.utils").is_available "alpha-nvim" and
-                    not bufs[2] then
-                    require("alpha").start(true)
-                end
+                    not bufs[2] then require("alpha").start(true) end
             end,
             desc = "Close buffer"
         },
-        ["<leader>fp"] = { "<cmd>Telescope projects<cr>", desc = "Find project" },
-        ["<leader>ggn"] = { "<cmd>Neogit<cr>", desc = "Open Neogit" }
+        ["<leader>fp"] = {"<cmd>Telescope projects<cr>", desc = "Find project"},
+        ["<leader>gn"] = {"<cmd>Neogit<cr>", desc = "Open Neogit"}
     }
 }
