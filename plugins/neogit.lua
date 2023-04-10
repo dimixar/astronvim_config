@@ -4,6 +4,6 @@ return {
     dependencies = {"nvim-lua/plenary.nvim", "sindrets/diffview.nvim"},
     event = "User AstroGitFile",
     config = function()
-        require("neogit").setup {integrations = {diffview = false}}
+        require("neogit").setup {integrations = {diffview = true}}
     end
 }
