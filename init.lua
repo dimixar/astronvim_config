@@ -1,1 +1,4 @@
-return {colorscheme = "gruvbox", ["Darazaki/indent-o-matic"] = {disable = true}}
+return {
+    colorscheme = "catppuccin",
+    ["Darazaki/indent-o-matic"] = {disable = true}
+}
